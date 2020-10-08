@@ -11,7 +11,6 @@ class TweetsList extends Component {
 
     render() {
         const { tweets } = this.props;
-        console.log(tweets , 'swot tweets');
 
         return(
             <div className="tweets-list-wrapper">
@@ -27,7 +26,6 @@ class TweetsList extends Component {
 }
 
 const mapStateToProps = (store) => {
-    console.log('tweets:',store, store.tweet.tweets);
     return {
         tweets: store.tweet.tweets
     }
