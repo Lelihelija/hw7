@@ -8,7 +8,7 @@ import {
 export const postTweetThunkCreator = async (payload, dispatch) => {
     
     console.log(payload);
-    await axios.post('http://domer.tech:9999/tweets/', { ...payload })
+    await axios.post('https://cors-anywhere.herokuapp.com/http://domer.tech:9999/tweets/', { ...payload })
     // .then(
     //                 response => dispatch({
     //                     type: POST_TWEET_SUCCESS,

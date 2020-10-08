@@ -28,7 +28,8 @@ export const fetchTweetsFail = (error) => {
 export const fetchTweetsAction = () => {
     return async (dispatch) => {
         dispatch(fetchTweetsRequest)
-        await axios.get('http://domer.tech:9999/tweets')
+        await axios.get('https://cors-anywhere.herokuapp.com/http://domer.tech:9999/tweets/')
+        
         .then((response) => {
             const tweets = response.data.data;
             dispatch(fetchTweetsSuccess(tweets));

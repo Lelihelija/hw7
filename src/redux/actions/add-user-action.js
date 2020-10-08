@@ -29,7 +29,6 @@ export const fetchUsersAction = () => {
     return async (dispatch) => {
         dispatch(fetchUsersRequest)
         await axios.get(`https://cors-anywhere.herokuapp.com/http://domer.tech:9999/users`)
-        // await axios.get(`http://domer.tech:9999/users`)
         .then((response) => {
             const users = response.data.data;
             dispatch(fetchUsersSuccess(users));
