@@ -1,0 +1,28 @@
+.user-container {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 15px rgb(112, 33, 112);
+    border-radius: 5px;
+    min-width: 300px;
+    width: fit-content;
+    max-width: 500px;
+    justify-content: space-between;
+    margin: 5px 0 5px 0;
+}
+
+.user-avatar {
+    height: 50px;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+
+.user-name {
+    word-break: break-word;
+}
+
+.user-username {
+    margin-left: 5px;
+    flex-shrink: 0;
+}
