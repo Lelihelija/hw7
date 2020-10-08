@@ -7,12 +7,13 @@ class UserContainer extends Component{
 
     componentWillMount() {
         this.props.fetchUsersAction();
+
     }
 
     render() {
 
         
-        const { users } = this.props
+        const { users } = this.props;
         return (
             <div>
                 {
@@ -39,7 +40,6 @@ class UserContainer extends Component{
 }
 
 const mapStateToProps = (store) => {
-    console.log(store, store.user.users);
     return {
         users: store.user.users
     }
